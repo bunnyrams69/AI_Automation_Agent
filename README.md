@@ -233,13 +233,12 @@ To maintain academic transparency, the verification status of components is expl
 
 ## 👥 Author & Academic Attribution
 
-- **Student / Project Lead**: *[Your Name Here]*
-- **Course / Degree**: *[Your College / Department / Degree]*
-- **Institution**: *[Your University / College Name]*
+- **Project Authors (Team)**:
+  - **Gunda Ganesh**
+  - **Guddati Rosi**
+  - **Grandhi Karthik**
+- **Degree & Department**: B.E. Computer Science & Engineering (B.E. CSE)
+- **Institution**: Sathyabama Institute of Science and Technology
 - **Academic Year**: 2025–2026
+- **Project Type**: Final Year College Engineering Project (Working Software Prototype)
 
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](file:///e:/Ai%20Automation%20Agent/LICENSE).
