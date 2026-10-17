@@ -23,4 +23,5 @@ Thumbs.db
 .idea/
 ~$*
 *.tmp
+.playwright-mcp/
 
