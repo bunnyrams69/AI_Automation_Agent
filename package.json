@@ -1,0 +1,48 @@
+{
+  "name": "whatsapp-ai-agent",
+  "version": "1.0.0",
+  "description": "WhatsApp AI Lead Qualification & Site-Visit Booking Agent for Local Businesses",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "simulate": "tsx scripts/simulate-inbound.ts",
+    "send-test": "tsx scripts/send-test-message.ts"
+  },
+  "keywords": [
+    "whatsapp",
+    "gemini",
+    "ai-agent",
+    "lead-qualification",
+    "real-estate",
+    "supabase"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^10.0.2",
+    "@fastify/rate-limit": "^10.2.2",
+    "@google/genai": "^2.30.0",
+    "@supabase/supabase-js": "^2.49.1",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "fastify-raw-body": "^6.0.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^10.1.2",
+    "pino": "^9.6.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@types/node-cron": "^3.0.11",
+    "@types/nodemailer": "^8.0.2",
+    "pino-pretty": "^13.0.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  }
+}
