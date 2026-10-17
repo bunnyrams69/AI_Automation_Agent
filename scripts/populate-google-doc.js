@@ -30,30 +30,42 @@ async (page) => {
   </div>
 
   <h2 style="color: #1e40af; border-bottom: 1px solid #d1d5db; padding-bottom: 4px; margin-top: 25px;">1. Project Submission Links &amp; Deliverables</h2>
+  <p style="color: #4b5563; margin-bottom: 10px;"><i>All project artifacts are hosted online on GitHub for direct evaluation and review:</i></p>
+  
   <table border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse; border: 1px solid #d1d5db; margin: 12px 0;">
     <tr style="background-color: #f9fafb;">
-      <th style="text-align: left; width: 28%; font-weight: bold; border: 1px solid #d1d5db;">Deliverable</th>
-      <th style="text-align: left; width: 42%; font-weight: bold; border: 1px solid #d1d5db;">Location / URL</th>
+      <th style="text-align: left; width: 26%; font-weight: bold; border: 1px solid #d1d5db;">Deliverable</th>
+      <th style="text-align: left; width: 44%; font-weight: bold; border: 1px solid #d1d5db;">Online Access Link (Click to Open)</th>
       <th style="text-align: left; width: 30%; font-weight: bold; border: 1px solid #d1d5db;">Description</th>
     </tr>
     <tr>
       <td style="border: 1px solid #d1d5db;"><b>Public GitHub Repository</b></td>
-      <td style="border: 1px solid #d1d5db;"><a href="https://github.com/bunnyrams69/AI_Automation_Agent">https://github.com/bunnyrams69/AI_Automation_Agent</a></td>
+      <td style="border: 1px solid #d1d5db;">
+        🔗 <a href="https://github.com/bunnyrams69/AI_Automation_Agent" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">Open GitHub Repository</a><br/>
+        <span style="font-size: 9pt; color: #6b7280;">https://github.com/bunnyrams69/AI_Automation_Agent</span>
+      </td>
       <td style="border: 1px solid #d1d5db;">Complete source code, Fastify server, database schema, tests, and documentation.</td>
     </tr>
     <tr>
       <td style="border: 1px solid #d1d5db;"><b>Presentation Deck (PPTX)</b></td>
-      <td style="border: 1px solid #d1d5db;"><code>docs/WhatsApp_AI_Agent_Explainer.pptx</code></td>
+      <td style="border: 1px solid #d1d5db;">
+        📊 <a href="https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/WhatsApp_AI_Agent_Explainer.pptx" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">View Presentation on GitHub</a><br/>
+        📥 <a href="https://github.com/bunnyrams69/AI_Automation_Agent/raw/main/docs/WhatsApp_AI_Agent_Explainer.pptx" target="_blank" style="color: #059669; font-weight: bold; text-decoration: underline;">Direct One-Click Download (.pptx)</a>
+      </td>
       <td style="border: 1px solid #d1d5db;">17-slide visual presentation deck with comprehensive speaker notes and demo screenshots.</td>
     </tr>
     <tr>
       <td style="border: 1px solid #d1d5db;"><b>Live Test Screenshots</b></td>
-      <td style="border: 1px solid #d1d5db;"><code>docs/screenshots/</code></td>
+      <td style="border: 1px solid #d1d5db;">
+        🖼️ <a href="https://github.com/bunnyrams69/AI_Automation_Agent/tree/main/docs/screenshots" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">Browse Screenshots Directory</a>
+      </td>
       <td style="border: 1px solid #d1d5db;">5 actual WhatsApp interaction screenshots demonstrating live qualification and Cal.com booking.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #d1d5db;"><b>Automated Test Suite</b></td>
-      <td style="border: 1px solid #d1d5db;"><code>docs/screenshots/vitest_test_results.png</code></td>
+      <td style="border: 1px solid #d1d5db;"><b>Automated Test Suite Proof</b></td>
+      <td style="border: 1px solid #d1d5db;">
+        🧪 <a href="https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/vitest_test_results.png" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">View Vitest Test Results Image</a>
+      </td>
       <td style="border: 1px solid #d1d5db;">61 automated unit and integration tests passing with 100% success rate across 12 suites.</td>
     </tr>
   </table>
@@ -166,34 +178,59 @@ async (page) => {
   </table>
 
   <h2 style="color: #1e40af; border-bottom: 1px solid #d1d5db; padding-bottom: 4px; margin-top: 25px;">6. Demonstration &amp; Experimental Results (5 Real WhatsApp Test Turns)</h2>
-  <p>The system was tested using live WhatsApp webhooks. The exact conversational sequence captured in our project test screenshots is detailed below:</p>
+  <p>The system was tested using live WhatsApp webhooks. The exact conversational sequence captured in our project test screenshots is detailed below (click any turn link to view the actual screenshot proof):</p>
 
   <div style="background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 14px; margin: 12px 0;">
-    <p style="margin: 0 0 6px 0; font-weight: bold; color: #0f172a;">Turn 1 &mdash; Initial Inquiry &amp; Inventory Discovery</p>
+    <p style="margin: 0 0 6px 0; font-weight: bold; color: #0f172a;">
+      Turn 1 &mdash; Initial Inquiry &amp; Inventory Discovery
+      <span style="float: right; font-weight: normal; font-size: 9pt;">
+        📸 <a href="https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/01_greeting_plotsizes.png" target="_blank" style="color: #2563eb; text-decoration: underline;">View Screenshot 1</a>
+      </span>
+    </p>
     <p style="margin: 0 0 4px 0; color: #0284c7;"><b>Buyer:</b> &ldquo;Hi, I am interested in your luxury villa plots project. What plots are available?&rdquo;</p>
     <p style="margin: 0; color: #166534;"><b>WhatsApp AI Agent:</b> Welcomes the buyer to <i>Greenfield Meadows</i> and invokes <code>check_availability</code>. Informs the user of available units: Plot #10 (350 sq.yd, West facing), Plot #12 (500 sq.yd, East facing), and Plot #15 (450 sq.yd, North facing).</p>
   </div>
 
   <div style="background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 14px; margin: 12px 0;">
-    <p style="margin: 0 0 6px 0; font-weight: bold; color: #0f172a;">Turn 2 &mdash; Specific Plot Specifications &amp; Pricing</p>
+    <p style="margin: 0 0 6px 0; font-weight: bold; color: #0f172a;">
+      Turn 2 &mdash; Specific Plot Specifications &amp; Pricing
+      <span style="float: right; font-weight: normal; font-size: 9pt;">
+        📸 <a href="https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/02_facing_plotchoice.png" target="_blank" style="color: #2563eb; text-decoration: underline;">View Screenshot 2</a>
+      </span>
+    </p>
     <p style="margin: 0 0 4px 0; color: #0284c7;"><b>Buyer:</b> &ldquo;Can you tell me more about Plot 12? What are the dimensions and total price?&rdquo;</p>
     <p style="margin: 0; color: #166534;"><b>WhatsApp AI Agent:</b> Calls <code>lookup_inventory(plot_number=12)</code>. Accurately reports: 500 sq.yds (50' x 90'), premium East-facing vastu compliance, ₹35,000 per sq.yd, totaling ₹1.75 Crores all-inclusive with immediate registration readiness.</p>
   </div>
 
   <div style="background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 14px; margin: 12px 0;">
-    <p style="margin: 0 0 6px 0; font-weight: bold; color: #0f172a;">Turn 3 &mdash; Budget Qualification &amp; Lead Categorization</p>
+    <p style="margin: 0 0 6px 0; font-weight: bold; color: #0f172a;">
+      Turn 3 &mdash; Budget Qualification &amp; Lead Categorization
+      <span style="float: right; font-weight: normal; font-size: 9pt;">
+        📸 <a href="https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/03_funding_qualification.png" target="_blank" style="color: #2563eb; text-decoration: underline;">View Screenshot 3</a>
+      </span>
+    </p>
     <p style="margin: 0 0 4px 0; color: #0284c7;"><b>Buyer:</b> &ldquo;My budget is around 1.8 to 2 Cr. Looking to buy immediately, self-funded without bank loan.&rdquo;</p>
     <p style="margin: 0; color: #166534;"><b>WhatsApp AI Agent:</b> Invokes <code>parse_buyer_budget</code> (standardizes to ₹2,00,00,000) and calls <code>qualify_lead</code>. Flags lead as <b>HOT</b> (budget matches project tier, immediate purchase horizon, self-funded). Confirms Plot #12 is well within budget.</p>
   </div>
 
   <div style="background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 14px; margin: 12px 0;">
-    <p style="margin: 0 0 6px 0; font-weight: bold; color: #0f172a;">Turn 4 &mdash; Location Pin &amp; Appointment Slot Presentation</p>
+    <p style="margin: 0 0 6px 0; font-weight: bold; color: #0f172a;">
+      Turn 4 &mdash; Location Pin &amp; Appointment Slot Presentation
+      <span style="float: right; font-weight: normal; font-size: 9pt;">
+        📸 <a href="https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/04_maps_location_link.png" target="_blank" style="color: #2563eb; text-decoration: underline;">View Screenshot 4</a>
+      </span>
+    </p>
     <p style="margin: 0 0 4px 0; color: #0284c7;"><b>Buyer:</b> &ldquo;Where exactly is the site located? Can I visit next week?&rdquo;</p>
     <p style="margin: 0; color: #166534;"><b>WhatsApp AI Agent:</b> Calls <code>get_location_details</code> and provides Google Maps directions (Shankarpally Road, 25 mins from Gachibowli). Concurrently queries Cal.com via <code>get_available_booking_slots</code> and suggests: Monday at 10:30 AM, Monday at 2:30 PM, or Tuesday at 11:00 AM.</p>
   </div>
 
   <div style="background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 14px; margin: 12px 0;">
-    <p style="margin: 0 0 6px 0; font-weight: bold; color: #0f172a;">Turn 5 &mdash; Confirmed Booking &amp; Owner Notification</p>
+    <p style="margin: 0 0 6px 0; font-weight: bold; color: #0f172a;">
+      Turn 5 &mdash; Confirmed Booking &amp; Owner Notification
+      <span style="float: right; font-weight: normal; font-size: 9pt;">
+        📸 <a href="https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/05_booking_confirmed.png" target="_blank" style="color: #2563eb; text-decoration: underline;">View Screenshot 5</a>
+      </span>
+    </p>
     <p style="margin: 0 0 4px 0; color: #0284c7;"><b>Buyer:</b> &ldquo;Monday 2:30 PM works. Please arrange a pickup from Gachibowli circle.&rdquo;</p>
     <p style="margin: 0; color: #166534;"><b>WhatsApp AI Agent:</b> Calls <code>book_site_visit</code>. Generates confirmed booking reference <code>BK-84729</code>, confirms AC cab pickup from Gachibowli circle for Monday 2:30 PM, and dispatches an instant HTML alert email to the business owner.</p>
   </div>
@@ -272,10 +309,10 @@ async (page) => {
     <li><code>calcom.test.ts</code>: Verifies slot retrieval, timezone conversion (Asia/Kolkata), and booking payload creation.</li>
     <li><code>tools.test.ts</code>: Verifies input argument schemas and error handling across all 10 tools.</li>
   </ul>
-  <p><b>Test Execution Benchmark:</b> All 61 tests complete in ~1.35 seconds with 100% pass rate.</p>
+  <p><b>Test Execution Benchmark:</b> All 61 tests complete in ~1.35 seconds with 100% pass rate. Proof screenshot: <a href="https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/vitest_test_results.png" target="_blank" style="color: #2563eb; text-decoration: underline;">vitest_test_results.png</a>.</p>
 
   <h2 style="color: #1e40af; border-bottom: 1px solid #d1d5db; padding-bottom: 4px; margin-top: 25px;">9. Presentation Slide Deck Structure</h2>
-  <p>A companion presentation deck of 17 slides is available at <code>docs/WhatsApp_AI_Agent_Explainer.pptx</code>:</p>
+  <p>A companion presentation deck of 17 slides is available for review: <a href="https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/WhatsApp_AI_Agent_Explainer.pptx" target="_blank" style="color: #2563eb; text-decoration: underline;">WhatsApp_AI_Agent_Explainer.pptx</a> (or <a href="https://github.com/bunnyrams69/AI_Automation_Agent/raw/main/docs/WhatsApp_AI_Agent_Explainer.pptx" target="_blank" style="color: #059669; text-decoration: underline;">Direct Download</a>):</p>
   <table border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse; border: 1px solid #d1d5db; margin: 12px 0;">
     <tr style="background-color: #f9fafb;">
       <th style="width: 15%; text-align: center; font-weight: bold; border: 1px solid #d1d5db;">Slide #</th>
@@ -347,7 +384,7 @@ async (page) => {
   <h2 style="color: #1e40af; border-bottom: 1px solid #d1d5db; padding-bottom: 4px; margin-top: 25px;">10. Student Declaration &amp; Academic Sign-off</h2>
   <p>We hereby declare that this project report entitled <b>&ldquo;WhatsApp AI Lead Qualification &amp; Site-Visit Booking Agent&rdquo;</b> is our original work carried out for our Bachelor of Engineering (B.E.) degree in the <b>Department of Computer Science &amp; Engineering</b> at <b>Sathyabama Institute of Science and Technology</b>, Chennai, during the academic year <b>2025 &ndash; 2026</b>.</p>
   <p>All source code, database migrations, configuration templates, and testing suites are publicly accessible in the project repository:</p>
-  <p style="margin: 12px 0;"><b>GitHub URL:</b> <a href="https://github.com/bunnyrams69/AI_Automation_Agent">https://github.com/bunnyrams69/AI_Automation_Agent</a></p>
+  <p style="margin: 12px 0;"><b>GitHub Repository:</b> <a href="https://github.com/bunnyrams69/AI_Automation_Agent" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">https://github.com/bunnyrams69/AI_Automation_Agent</a></p>
 
   <div style="margin-top: 40px; display: flex; justify-content: space-between;">
     <div>
@@ -383,11 +420,12 @@ PROJECT AUTHORS / TEAM MEMBERS:
 Institution: Sathyabama Institute of Science and Technology, Chennai
 Academic Year: 2025 - 2026
 
-1. PROJECT SUBMISSION LINKS & DELIVERABLES:
+1. PROJECT SUBMISSION LINKS & DELIVERABLES (CLICKABLE ONLINE ACCESS):
 - Public GitHub Repository: https://github.com/bunnyrams69/AI_Automation_Agent
-- Presentation Deck (PPTX): docs/WhatsApp_AI_Agent_Explainer.pptx (17 slides)
-- Test Screenshots: docs/screenshots/ (5 live WhatsApp chat turns)
-- Automated Test Suite: docs/screenshots/vitest_test_results.png (61 tests passing across 12 suites)
+- Presentation Deck (PPTX) - Online Viewer: https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/WhatsApp_AI_Agent_Explainer.pptx
+- Presentation Deck (PPTX) - Direct Download: https://github.com/bunnyrams69/AI_Automation_Agent/raw/main/docs/WhatsApp_AI_Agent_Explainer.pptx
+- Live Test Screenshots Directory: https://github.com/bunnyrams69/AI_Automation_Agent/tree/main/docs/screenshots
+- Automated Test Suite Proof Image: https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/vitest_test_results.png
 
 2. EXECUTIVE SUMMARY:
 In real estate and site-visit-based businesses, customer leads are expensive. Over 60% of online leads are lost because inquiries arrive outside normal business hours when human representatives are unavailable.
@@ -414,12 +452,17 @@ Our project is an autonomous conversational agent operating 24/7 on WhatsApp. Wh
 9. book_site_visit: Finalizes appointment on Cal.com and captures pickup location.
 10. escalate_to_human: Halts AI automation and notifies human staff when needed.
 
-5. LIVE DEMO RESULTS (5 WHATSAPP TURNS):
-Turn 1: Buyer inquires about available plots; Agent lists Plots 10, 12, 15.
-Turn 2: Buyer asks about Plot 12; Agent confirms 500 sq.yds, East-facing, 1.75 Cr.
-Turn 3: Buyer states budget "around 1.8 to 2 Cr, self-funded"; Agent qualifies as HOT lead.
-Turn 4: Buyer asks for location and visit; Agent shares Google Maps pin & Cal.com slots.
-Turn 5: Buyer picks Monday 2:30 PM with pickup at Gachibowli; Agent confirms booking BK-84729 and emails owner.
+5. LIVE DEMO RESULTS (5 WHATSAPP TURNS WITH PROOF LINKS):
+- Turn 1: Buyer inquires about available plots; Agent lists Plots 10, 12, 15.
+  Proof: https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/01_greeting_plotsizes.png
+- Turn 2: Buyer asks about Plot 12; Agent confirms 500 sq.yds, East-facing, 1.75 Cr.
+  Proof: https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/02_facing_plotchoice.png
+- Turn 3: Buyer states budget "around 1.8 to 2 Cr, self-funded"; Agent qualifies as HOT lead.
+  Proof: https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/03_funding_qualification.png
+- Turn 4: Buyer asks for location and visit; Agent shares Google Maps pin & Cal.com slots.
+  Proof: https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/04_maps_location_link.png
+- Turn 5: Buyer picks Monday 2:30 PM with pickup at Gachibowli; Agent confirms booking BK-84729 and emails owner.
+  Proof: https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/05_booking_confirmed.png
 
 6. TECH STACK:
 Node.js v20+, TypeScript v5+, Fastify v5+, Google Gemini 1.5 Flash, Supabase PostgreSQL, Cal.com API v2, Meta WhatsApp Cloud API v21.0, Nodemailer SMTP, Vitest (61 tests).
@@ -431,6 +474,13 @@ Sathyabama Institute of Science and Technology
 Academic Year 2025 - 2026
 GitHub: https://github.com/bunnyrams69/AI_Automation_Agent
 `;
+
+  // Navigate to Google Doc if page is closed or not at URL
+  if (page.url() !== 'https://docs.google.com/document/d/1kZ_lEBkyQT8vThtfbGuOCRbu5WHz4T0PAn1ueZKUjyA/edit?tab=t.0' &&
+      !page.url().includes('1kZ_lEBkyQT8vThtfbGuOCRbu5WHz4T0PAn1ueZKUjyA')) {
+    await page.goto('https://docs.google.com/document/d/1kZ_lEBkyQT8vThtfbGuOCRbu5WHz4T0PAn1ueZKUjyA/edit?usp=sharing');
+    await page.waitForTimeout(3000);
+  }
 
   // Write to clipboard inside browser context
   await page.evaluate(({ htmlContent, plainContent }) => {
@@ -456,7 +506,7 @@ GitHub: https://github.com/bunnyrams69/AI_Automation_Agent
 
   // Paste from clipboard
   await page.keyboard.press('Control+v');
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(4000);
 
-  return "Successfully pasted College Submission Report into Google Doc!";
+  return "Successfully updated Google Doc with clickable online links!";
 }

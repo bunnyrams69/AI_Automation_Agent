@@ -21,18 +21,19 @@
 * **Institution**: Sathyabama Institute of Science and Technology, Chennai
 * **Academic Year**: 2025 – 2026
 * **Project Repository**: [https://github.com/bunnyrams69/AI_Automation_Agent](https://github.com/bunnyrams69/AI_Automation_Agent)
-* **Presentation Deck**: `docs/WhatsApp_AI_Agent_Explainer.pptx` (17-slide comprehensive explainer with speaker notes)
 
 ---
 
 ## 1. Quick Access Project Links & Deliverables
 
-| Deliverable | Location / URL | Description |
+All deliverables are hosted online on GitHub for direct evaluation and review:
+
+| Deliverable | Online Access Link (Click to Open) | Description |
 | :--- | :--- | :--- |
-| **Public GitHub Repository** | [https://github.com/bunnyrams69/AI_Automation_Agent](https://github.com/bunnyrams69/AI_Automation_Agent) | Complete source code, TypeScript Fastify server, database migrations, and test suites. |
-| **Presentation Deck (PPTX)** | [`docs/WhatsApp_AI_Agent_Explainer.pptx`](file:///e:/Ai%20Automation%20Agent/docs/WhatsApp_AI_Agent_Explainer.pptx) | 17-slide visual presentation designed for faculty and evaluation committee. |
-| **Test Screenshots & Proof** | [`docs/screenshots/`](file:///e:/Ai%20Automation%20Agent/docs/screenshots/) | 5 real end-to-end WhatsApp qualification and Cal.com booking screenshots. |
-| **Automated Test Results** | [`docs/screenshots/vitest_test_results.png`](file:///e:/Ai%20Automation%20Agent/docs/screenshots/vitest_test_results.png) | 61 automated tests passing across 12 test suites. |
+| **Public GitHub Repository** | 🔗 [Open GitHub Repository](https://github.com/bunnyrams69/AI_Automation_Agent)<br>`https://github.com/bunnyrams69/AI_Automation_Agent` | Complete source code, TypeScript Fastify server, database migrations, and test suites. |
+| **Presentation Deck (PPTX)** | 📊 [View Presentation on GitHub](https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/WhatsApp_AI_Agent_Explainer.pptx)<br>📥 [Direct One-Click Download (.pptx)](https://github.com/bunnyrams69/AI_Automation_Agent/raw/main/docs/WhatsApp_AI_Agent_Explainer.pptx) | 17-slide visual presentation designed for faculty and evaluation committee. |
+| **Live Test Screenshots** | 🖼️ [Browse Screenshots Directory on GitHub](https://github.com/bunnyrams69/AI_Automation_Agent/tree/main/docs/screenshots) | 5 actual WhatsApp interaction screenshots demonstrating live qualification and Cal.com booking. |
+| **Automated Test Results** | 🧪 [View Vitest Test Results Proof](https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/vitest_test_results.png) | 61 automated tests passing across 12 test suites. |
 
 ---
 
@@ -117,7 +118,7 @@ sequenceDiagram
 
 ### The 7-Step Processing Flow:
 1. **Webhook Ingestion**: Fastify receives the webhook payload from Meta and verifies the `X-Hub-Signature-256` HMAC cryptographic signature to reject unauthorized traffic.
-2. **Idempotent Deduplication**: Meta's webhook system guarantees "at-least-once" delivery, which can duplicate messages during network delays. Our database logs incoming message IDs in `processed_messages`; duplicates are acknowledged immediately and ignored.
+2. **Idempotent Deduplication**: Meta's webhook system guarantees "at-least-once" delivery, which can result in duplicate webhooks. Our database logs incoming message IDs in `processed_messages`; duplicates are acknowledged immediately and ignored.
 3. **Context Assembly**: The system retrieves recent conversational history and current lead qualification state from PostgreSQL.
 4. **Agentic Reasoning & Tool Calling**: Gemini 1.5 Flash evaluates the user's intent. Rather than hallucinating answers, it selects and invokes appropriate tools from our 10 registered functions.
 5. **Tool Execution**: The server executes the function locally against Supabase or Cal.com and feeds the verified output back to the model.
@@ -139,7 +140,7 @@ To guarantee that the AI never produces inaccurate information regarding plot av
 | **5** | `get_location_details` | Returns exact Google Maps coordinates, distance to international airport, Outer Ring Road, and IT hubs. |
 | **6** | `parse_buyer_budget` | Normalizes colloquial Indian expressions (*"80L"*, *"1.2cr"*, *"1core"*) into exact numerical rupees (`8000000`, `12000000`). |
 | **7** | `qualify_lead` | Computes lead readiness score and categorizes buyer into **Cold**, **Warm**, or **Hot**. |
-| **8** | `get_available_booking_slots` | Queries Cal.com API for real-time 45-minute site-visit slots over the upcoming 7 days. |
+| **8** | `get_available_booking_slots` | Queries Cal.com API for real-time 45-minute site-visit slots over the upcoming 7 days in Indian Standard Time (IST). |
 | **9** | `book_site_visit` | Secures the chosen appointment slot on Cal.com, captures cab pickup address, and saves booking reference. |
 | **10** | `escalate_to_human` | Immediately mutes the automated agent and triggers human staff intervention when requested or upon detected frustration. |
 
@@ -147,22 +148,22 @@ To guarantee that the AI never produces inaccurate information regarding plot av
 
 ## 6. Live Demonstration & Verification (The 5 WhatsApp Test Turns)
 
-The prototype was thoroughly tested with end-to-end live WhatsApp interactions. The actual conversation flow verified in our testing is documented below:
+The prototype was thoroughly tested with end-to-end live WhatsApp interactions. The actual conversation flow verified in our testing is documented below (with links to the actual screenshot proof on GitHub):
 
 ### Conversation Walkthrough:
-* **Turn 1 — Initial Inquiry & Project Discovery**:
+* **Turn 1 — Initial Inquiry & Project Discovery**: [📸 View Screenshot 1](https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/01_greeting_plotsizes.png)
   * *Buyer*: *"Hi, I am interested in your luxury villa plots project. What plots are available?"*
   * *Agent*: Welcomes the buyer, introduces "Greenfield Meadows", and calls `check_availability` to list available inventory: Plot #10 (350 sq.yd, West), Plot #12 (500 sq.yd, East), and Plot #15 (450 sq.yd, North).
-* **Turn 2 — Specific Unit Deep-Dive**:
+* **Turn 2 — Specific Unit Deep-Dive**: [📸 View Screenshot 2](https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/02_facing_plotchoice.png)
   * *Buyer*: *"Can you tell me more about Plot 12? What are the dimensions and total price?"*
   * *Agent*: Calls `lookup_inventory(plot_number="12")`. Returns exact specifications: 500 sq.yds (50' x 90'), East-facing, priced at ₹35,000/sq.yd totaling ₹1.75 Crores all-inclusive, with 100% Vastu compliance.
-* **Turn 3 — Budget Qualification & Buyer Readiness**:
+* **Turn 3 — Budget Qualification & Buyer Readiness**: [📸 View Screenshot 3](https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/03_funding_qualification.png)
   * *Buyer*: *"My budget is around 1.8 to 2 Cr. Looking to buy immediately, self-funded without bank loan."*
   * *Agent*: Invokes `parse_buyer_budget` (resolves to ₹2,00,00,000) and `qualify_lead`. Flags lead as **HOT** (budget matches project minimum, immediate timeline, self-funded). Confirms Plot #12 is well within budget.
-* **Turn 4 — Location Pin & Appointment Scheduling**:
+* **Turn 4 — Location Pin & Appointment Scheduling**: [📸 View Screenshot 4](https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/04_maps_location_link.png)
   * *Buyer*: *"Where exactly is the site located? Can I visit next week?"*
   * *Agent*: Calls `get_location_details` (shares Google Maps link: Shankarpally Road, 25 mins from Gachibowli). Calls `get_available_booking_slots` on Cal.com and offers available times: Monday at 10:30 AM or 2:30 PM, Tuesday at 11:00 AM.
-* **Turn 5 — Confirmed Booking & Notification**:
+* **Turn 5 — Confirmed Booking & Notification**: [📸 View Screenshot 5](https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/05_booking_confirmed.png)
   * *Buyer*: *"Monday 2:30 PM works. Please arrange a pickup from Gachibowli circle."*
   * *Agent*: Calls `book_site_visit(time="Monday 2:30 PM", pickup="Gachibowli Circle")`. Generates confirmed booking reference `BK-84729`, shares driver coordination guidelines, and dispatches an instant HTML alert email to management.
 
@@ -192,6 +193,7 @@ The system was validated using **Vitest** automated unit and integration tests:
 * **Total Test Suites**: 12 suites
 * **Total Automated Tests**: 61 tests passing (100% pass rate)
 * **Execution Time**: ~1.35 seconds
+* **Proof Screenshot**: [vitest_test_results.png on GitHub](https://github.com/bunnyrams69/AI_Automation_Agent/blob/main/docs/screenshots/vitest_test_results.png)
 * **Key Tested Areas**:
   1. `meta-signature.test.ts`: Rejection of unauthorized webhook payloads lacking valid HMAC-SHA256 signatures.
   2. `deduplication.test.ts`: Prevention of duplicate replies when Meta resends webhooks.
